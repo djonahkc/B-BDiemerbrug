@@ -21,9 +21,9 @@ export default function Header() {
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className="text-gray-600 hover:text-blue-600 relative text-lg
+                className="text-gray-600 hover:text-white relative text-lg
                   after:absolute after:bottom-0 after:left-0 after:h-0.5 
-                  after:w-0 hover:after:w-full after:bg-blue-600 
+                  after:w-0 hover:after:w-full after:bg-white 
                   after:transition-all after:duration-300"
               >
                 {item}

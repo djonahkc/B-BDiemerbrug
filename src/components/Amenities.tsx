@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Wifi, Coffee, Utensils, Car, Wind, Bath, Tv, Key } from 'lucide-react';
 
 const amenities = [
