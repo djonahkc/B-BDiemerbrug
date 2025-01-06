@@ -1,13 +1,13 @@
 const rooms = [
   {
     name: 'Room 1',
-    image: '/public/bedkamer_alweer.jpg',
+    image: '/bedkamer_alweer.jpg',
     price: 195,
     description: 'Cozy and inviting, our beautifully furnished room features a comfortable queen-sized bed, private ensuite bathroom, and serene views—perfect for a relaxing stay.'
   },
   {
     name: 'Room 2',
-    image: '/public/kamer2.jpg',
+    image: '/kamer2.jpg',
     price: 195,
     description: 'Bright and comfortable, this room features a king-sized bed, a private bathroom, and a cozy spot to relax during your stay'  
   }
