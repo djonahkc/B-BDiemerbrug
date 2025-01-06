@@ -8,8 +8,7 @@ const images = [
   '/zithoek.jpg',
   '/buiten.jpg',
   '/bedkamer_alweer.jpg',
-  '/ontbijtkmr-BB.jpg',
-
+  '/ontbijtkmr-BB.jpg'
 ];
 
 export default function Hero() {

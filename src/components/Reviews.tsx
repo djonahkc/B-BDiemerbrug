@@ -6,17 +6,17 @@ const [expandedReviews, setExpandedReviews] = useState<number[]>([]);
 const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
 const guestPhotos = [
-    { src: "/public/guest-experiences/review1.jpg" },
-    { src: "/public/guest-experiences/review2.jpg" },
-    { src: "/public/guest-experiences/review3.jpg" },
-    { src: "/public/guest-experiences/review4.jpg" },
-    { src: "/public/guest-experiences/reveiw5.jpg" },
-    { src: "/public/guest-experiences/review6.jpg" },
-    { src: "/public/guest-experiences/review7.jpg" },
-    { src: "/public/guest-experiences/review8.jpg" },
-    { src: "/public/guest-experiences/review9.jpg" },
-    { src: "/public/guest-experiences/review10.jpg" }
-  ];
+    { src: "/guest-experiences/review1.jpg" },
+    { src: "/guest-experiences/review2.jpg" },
+    { src: "/guest-experiences/review3.jpg" },
+    { src: "/guest-experiences/review4.jpg" },
+    { src: "/guest-experiences/reveiw5.jpg" },
+    { src: "/guest-experiences/review6.jpg" },
+    { src: "/guest-experiences/review7.jpg" },
+    { src: "/guest-experiences/review8.jpg" },
+    { src: "/guest-experiences/review9.jpg" },
+    { src: "/guest-experiences/review10.jpg"}
+];
 
 const toggleReview = (index: number) => {
     setExpandedReviews(prev => 
@@ -115,26 +115,26 @@ return (
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {reviews.map((review, index) => (
+        {reviews.map((review, index) => (
             <div 
-              key={index}
-              className="bg-white p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
+            key={index}
+            className="bg-white p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
             >
-              <div className="flex items-start justify-between mb-4">
+            <div className="flex items-start justify-between mb-4">
                 <div>
-                  <span className="font-semibold text-[#5c4d3f] block">{review.author}</span>
-                  <span className="text-gray-500 text-sm">{review.location}</span>
+                <span className="font-semibold text-[#5c4d3f] block">{review.author}</span>
+                <span className="text-gray-500 text-sm">{review.location}</span>
                 </div>
                 <div className="flex items-center bg-[#5c4d3f] text-white px-2 py-1 rounded">
-                  <span className="font-bold">{review.rating}</span>
-                  <span className="text-sm ml-1">/10</span>
+                <span className="font-bold">{review.rating}</span>
+                <span className="text-sm ml-1">/10</span>
                 </div>
-              </div>
-              <div className="relative">
+            </div>
+            <div className="relative">
                 <p className={`text-gray-600 mb-4 ${
-                  expandedReviews.includes(index) ? '' : 'line-clamp-4'
+                expandedReviews.includes(index) ? '' : 'line-clamp-4'
                 }`}>
-                  {review.text}
+                {review.text}
                 </p>
                 {review.text.length > 200 && (
                   <button
