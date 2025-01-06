@@ -2,10 +2,10 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-20 bg-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-serif text-gray-900 mb-4">Contact Us</h2>
+          <h2 className="text-blue-900 text-4xl font-serif mb-4">Contact Us</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             We're here to help make your stay perfect
           </p>
@@ -71,7 +71,9 @@ export default function Contact() {
               </div>
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+                className="w-full bg-[#5c4d3f] text-white px-6 py-3 rounded-lg
+                  hover:bg-[#6a5a4a] transition-all duration-300 transform 
+                  hover:scale-105 shadow-md"
               >
                 Send Message
               </button>

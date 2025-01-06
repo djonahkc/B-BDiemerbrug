@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --warm-white: #faf9f7;
+  --soft-gray: #f8f9fa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--warm-white);
+}
+
+.bg-pattern {
+  background-color: var(--soft-gray);
+  background-image: radial-gradient(#00000005 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+#rooms {
+  background-color: var(--soft-gray);
+}
+
+#gallery {
+  background-color: var(--soft-gray);
+}
+
+#contact {
+  background-color: var(--warm-white);
+}
